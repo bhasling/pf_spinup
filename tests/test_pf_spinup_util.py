@@ -31,6 +31,7 @@ def test_initialize_model():
     runname = "pf_spinup"
     directory_path = "."
     model_path = f"{directory_path}/{runname}"
+    print("from test_initialize_model", directory_path)
     model = pf_spinup_util.get_pf_model(directory_path)
 
     options = {"grid_bounds": [4020, 1964, 4022, 1967], "grid": "conus2"}
